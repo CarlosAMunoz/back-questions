@@ -23,6 +23,7 @@ public class QuestionsServiceImp implements IQuestionService{
     public List<QuestionDto> listarPreguntas() {
 
         List<QuestionDto> questionDto = new ArrayList<>();
+        
         List<Questions> questions = (List<Questions>) questionRepository.findAll();
         questionDto = questionMapper.modelToDtos(questions);
         return questionDto;
