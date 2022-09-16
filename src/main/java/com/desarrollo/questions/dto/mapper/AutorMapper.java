@@ -23,3 +23,4 @@ public interface AutorMapper {
     List<AutorDTO> modelToDtos(List<Autor> autors);
 
 }
+ 
